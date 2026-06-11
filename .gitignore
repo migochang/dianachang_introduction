@@ -1,0 +1,14 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+
+# Local preview helper (optional to keep)
+# tools/
+
+# Personal assets you may not want public — uncomment if needed
+# assets/이력서-장은실.pdf
