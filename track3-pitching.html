@@ -1,0 +1,990 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0c1929">
+<title>Track 3 · 1장: 투자자의 시선을 사로잡는 AX 스타트업의 IR 덱과 피칭 스토리라인 | 뉴패러다임인베스트먼트</title>
+<meta name="description" content="뉴패러다임인베스트먼트 2027 아기유니콘 AX 도서 Track 3 1장. 장은실 수석팀장이 전하는 AX 스타트업 맞춤형 12장 IR 덱 구성과 3대 핵심 지표, 4대 단골 반론 방어 공식.">
+<style>
+/* ==========================================================================
+   New Paradigm Investment · 2027 AX Book · Track 3 Chapter 1
+   Editorial Reader Design System (Navy / Gold / Cream / Charcoal)
+   ========================================================================== */
+:root {
+  --navy-dark: #08111c;
+  --navy: #0c1929;
+  --navy-light: #16263b;
+  --gold: #c5a059;
+  --gold-light: #e5cf9c;
+  --gold-bg: rgba(197, 160, 89, 0.08);
+  --gold-border: rgba(197, 160, 89, 0.28);
+  --bg: #fbf9f4;
+  --card-bg: #ffffff;
+  --text: #1e252f;
+  --text-muted: #5e6c7d;
+  --text-light: #8795a5;
+  --border: #e8e2d4;
+  --danger-bg: #fdf2f2;
+  --danger-border: #f5c2c2;
+  --danger-text: #b91c1c;
+  --success-bg: #f0fdf4;
+  --success-border: #bbf7d0;
+  --success-text: #15803d;
+  --serif: "Noto Serif KR", "Batang", "Song Myung", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html {
+  font-size: 16px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header & Progress */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(12, 25, 41, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #fff;
+  border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+}
+.header__inner {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+.brand__logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--gold);
+  color: var(--navy-dark);
+  font-weight: 900;
+  font-size: 13px;
+  border-radius: 6px;
+  letter-spacing: -0.5px;
+}
+.brand__meta {
+  font-size: 12px;
+  line-height: 1.3;
+}
+.brand__meta strong {
+  display: block;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+.brand__meta span {
+  color: var(--gold-light);
+  font-size: 11px;
+}
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.btn-font {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-font:hover { background: rgba(255, 255, 255, 0.2); }
+.progress-bar {
+  height: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--gold), #f3e4bc);
+  transition: width 0.1s;
+}
+
+/* Article Shell */
+.shell {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  flex: 1;
+}
+
+/* Hero Section */
+.hero {
+  margin-bottom: 40px;
+  padding-bottom: 32px;
+  border-bottom: 2px solid var(--border);
+}
+.hero__kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+.kicker-pill {
+  background: var(--navy);
+  color: var(--gold-light);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+}
+.hero__title {
+  font-family: var(--serif);
+  font-size: clamp(24px, 4vw, 36px);
+  line-height: 1.35;
+  color: var(--navy-dark);
+  margin-bottom: 20px;
+  word-break: keep-all;
+}
+.hero__author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 16px 20px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.author-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.author-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  border: 2px solid var(--gold);
+}
+.author-info h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy);
+}
+.author-info p {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.chapter-meta {
+  display: flex;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.meta-chip {
+  background: rgba(12, 25, 41, 0.05);
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Key Takeaway Callout */
+.takeaway {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  color: #fff;
+  padding: 24px 28px;
+  border-radius: 12px;
+  margin: 32px 0 44px;
+  border-left: 5px solid var(--gold);
+  box-shadow: 0 8px 24px rgba(12, 25, 41, 0.08);
+}
+.takeaway__label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.takeaway__quote {
+  font-family: var(--serif);
+  font-size: clamp(16px, 2.5vw, 19px);
+  line-height: 1.6;
+  color: #f7f5ef;
+  word-break: keep-all;
+}
+.takeaway__quote strong {
+  color: var(--gold-light);
+}
+
+/* Table of Contents Floating/Nav */
+.toc-box {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-bottom: 44px;
+}
+.toc-box h3 {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.toc-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 8px;
+}
+.toc-list a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--navy);
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+.toc-list a:hover {
+  background: var(--gold-bg);
+  color: var(--gold);
+}
+.toc-num {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+/* Content Elements */
+.content h2 {
+  font-family: var(--serif);
+  font-size: clamp(20px, 3vw, 26px);
+  color: var(--navy-dark);
+  margin: 56px 0 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--border);
+  position: relative;
+  word-break: keep-all;
+}
+.content h2::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 48px;
+  height: 2px;
+  background: var(--gold);
+}
+.content h3 {
+  font-size: 18px;
+  color: var(--navy);
+  margin: 28px 0 12px;
+  font-weight: 700;
+  word-break: keep-all;
+}
+.content p {
+  font-size: 16px;
+  margin-bottom: 18px;
+  color: #2b333e;
+  word-break: keep-all;
+}
+.content strong {
+  color: var(--navy-dark);
+  font-weight: 700;
+}
+
+/* Card Boxes */
+.card-box {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 22px 24px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+.card-box--gold {
+  border-left: 4px solid var(--gold);
+  background: #fdfbf7;
+}
+
+/* 12-Slide Table */
+.table-wrap {
+  overflow-x: auto;
+  margin: 24px 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card-bg);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: left;
+}
+th {
+  background: var(--navy);
+  color: #fff;
+  padding: 12px 14px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+th:first-child { width: 50px; text-align: center; }
+th:nth-child(2) { width: 150px; }
+td {
+  padding: 12px 14px;
+  border-top: 1px solid var(--border);
+  vertical-align: top;
+  line-height: 1.55;
+}
+tr:hover td { background: rgba(197, 160, 89, 0.04); }
+td:first-child {
+  text-align: center;
+  font-family: var(--mono);
+  font-weight: 700;
+  color: var(--navy);
+}
+td strong {
+  color: var(--navy);
+}
+td.danger {
+  color: var(--danger-text);
+  font-size: 13px;
+}
+
+/* 3 Stat Cards */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin: 24px 0 32px;
+}
+.stat-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(12, 25, 41, 0.06);
+}
+.stat-card__badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--gold);
+  background: var(--gold-bg);
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.stat-card__title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+.stat-card__num {
+  font-family: var(--mono);
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--navy-dark);
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+.stat-card__desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Counterargument Cards */
+.qa-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  margin: 20px 0;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+.qa-card__head {
+  background: var(--navy-light);
+  color: #fff;
+  padding: 14px 20px;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.qa-card__body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.qa-resp {
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.qa-resp--bad {
+  background: var(--danger-bg);
+  border: 1px solid var(--danger-border);
+  color: #7f1d1d;
+}
+.qa-resp--bad strong {
+  color: var(--danger-text);
+  display: block;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+.qa-resp--good {
+  background: var(--success-bg);
+  border: 1px solid var(--success-border);
+  color: #14532d;
+}
+.qa-resp--good strong {
+  color: var(--success-text);
+  display: block;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+/* 3-Minute Timeline */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 24px 0;
+}
+.time-step {
+  display: flex;
+  gap: 16px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px 20px;
+}
+.time-badge {
+  flex-shrink: 0;
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--gold);
+  background: var(--navy);
+  padding: 6px 12px;
+  border-radius: 6px;
+  height: fit-content;
+}
+.time-content h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+.time-content p {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+.time-content .example {
+  background: #fdfbf7;
+  border-left: 3px solid var(--gold);
+  padding: 8px 12px;
+  font-size: 13px;
+  color: var(--navy);
+  font-style: italic;
+  margin-top: 6px;
+}
+
+/* Foot & Author Bio */
+.author-bio {
+  background: linear-gradient(135deg, #f7f5ef 0%, #ebe6d9 100%);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin-top: 60px;
+}
+.author-bio h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+.author-bio p {
+  font-size: 14px;
+  color: #3f4a56;
+  line-height: 1.65;
+}
+
+.footer {
+  background: var(--navy-dark);
+  color: #a4b3c6;
+  padding: 32px 20px;
+  text-align: center;
+  font-size: 12px;
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer p { margin-bottom: 6px; }
+.footer a { color: var(--gold-light); text-decoration: none; }
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .shell { padding: 24px 16px 60px; }
+  .time-step { flex-direction: column; gap: 8px; }
+  .stat-grid { grid-template-columns: 1fr; }
+  th, td { font-size: 13px; padding: 10px 8px; }
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header__inner">
+    <a class="brand" href="#top">
+      <span class="brand__logo">NP</span>
+      <div class="brand__meta">
+        <strong>아기유니콘 AX 도서</strong>
+        <span>Track 3 · 실전 투자·TIPS 도약</span>
+      </div>
+    </a>
+    <div class="header__actions">
+      <button class="btn-font" onclick="adjustFont(-1)" title="글자 작게">A-</button>
+      <button class="btn-font" onclick="adjustFont(1)" title="글자 크게">A+</button>
+    </div>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+</header>
+
+<main class="shell" id="top">
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__kicker">
+      <span class="kicker-pill">Track 3 · SCALE</span>
+      <span>2027.01 발행 예정 원고</span>
+    </div>
+    <h1 class="hero__title">Track 3 · 1장: 투자자의 시선을 사로잡는 AX 스타트업의 IR 덱과 피칭 스토리라인</h1>
+    <div class="hero__author">
+      <div class="author-profile">
+        <div class="author-avatar">은실</div>
+        <div class="author-info">
+          <h4>장은실</h4>
+          <p>뉴패러다임인베스트먼트 수석팀장 · 창업기획자(AC) 전문인력</p>
+        </div>
+      </div>
+      <div class="chapter-meta">
+        <span class="meta-chip">예상 18~22쪽</span>
+        <span class="meta-chip">연계 Track 1 20장</span>
+        <span class="meta-chip">초안 v0.1</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Takeaway -->
+  <aside class="takeaway">
+    <div class="takeaway__label">Core Thesis · 핵심 한 줄</div>
+    <div class="takeaway__quote">
+      투자자는 <strong>"AI를 씁니다"</strong>라는 말에 베팅하지 않는다.<br>
+      AI로 원가와 속도의 구조를 바꾼 <strong>'숫자'</strong>와 <strong>'비즈니스 모델'</strong>에 베팅한다.
+    </div>
+  </aside>
+
+  <!-- Table of Contents -->
+  <nav class="toc-box" aria-label="목차">
+    <h3>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+      이 장의 목차
+    </h3>
+    <ul class="toc-list">
+      <li><a href="#prologue"><span class="toc-num">00</span> 기술 자랑을 멈추어야 투자자의 눈이 뜨인다</a></li>
+      <li><a href="#sec-01"><span class="toc-num">01</span> 투자자의 두 가지 본질 질문: 방어성과 확장비용</a></li>
+      <li><a href="#sec-02"><span class="toc-num">02</span> AX 스타트업 맞춤형 12장 IR 덱 구성표</a></li>
+      <li><a href="#sec-03"><span class="toc-num">03</span> ‘AI를 씁니다’를 숫자로 바꾸는 3대 지표</a></li>
+      <li><a href="#sec-04"><span class="toc-num">04</span> 심사역의 4대 단골 반론과 방어 공식</a></li>
+      <li><a href="#sec-05"><span class="toc-num">05</span> 3분 실전 피칭 스크립트와 Q&A 현장 코칭</a></li>
+    </ul>
+  </nav>
+
+  <!-- Content -->
+  <article class="content">
+
+    <!-- Prologue -->
+    <section id="prologue">
+      <h2>[프롤로그] 기술 자랑을 멈추어야 투자자의 눈이 뜨인다</h2>
+      <p>투자자는 "우리는 AI를 잘 쓰는 회사입니다"라는 선언에 더 이상 설레지 않습니다. 챗GPT와 오픈소스 모델이 보편화된 지금, AI 기술을 연동했다는 사실 자체는 기술적 해자(Moat)가 되지 못하기 때문입니다.</p>
+      <p>심사역이 IR 덱을 넘기며 끝까지 찾는 것은 화려한 모델 파라미터 수나 최신 라이브러리 목록이 아닙니다. <strong>"이 팀이 고객의 문제를 해결하는 데 드는 비용과 시간을 어떻게 파괴적으로 줄였는가"</strong>, 그리고 <strong>"그 과정에서 경쟁자가 쉽게 흉내 낼 수 없는 구조적 우위를 어떻게 만들었는가"</strong>에 대한 단단한 증거입니다.</p>
+      <div class="card-box card-box--gold">
+        <p style="margin:0; font-size:15px; color:var(--navy);">
+          창업자로서 직접 회사를 만들고 운영하며 자금을 유치해 보았던 경험, 그리고 액셀러레이터 심사 현장에서 수많은 초기 스타트업을 심사하고 60회 이상 무대에서 피칭을 코칭하며 확인한 <strong>'투자자를 설득하는 진짜 AX IR의 법칙'</strong>을 이 장에 가감 없이 정리합니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 01 -->
+    <section id="sec-01">
+      <h2>01. 투자자가 던지는 두 가지 본질 질문: 방어 가능성과 확장 비용</h2>
+      <p>IR 미팅룸에서 AI 스타트업 대표들이 가장 당황하는 순간은 기술 질문을 받을 때가 아니라, 사업의 지속 가능성을 묻는 두 가지 질문을 맞닥뜨릴 때입니다.</p>
+
+      <h3>질문 1. "빅테크나 OpenAI가 다음 업데이트에 동일 기능을 내놓으면 어떻게 됩니까?"</h3>
+      <p>대다수 창업자가 "저희 프롬프트 엔지니어링이 더 정교합니다", "저희 알고리즘 튜닝이 앞섭니다"라고 답하지만, 이는 심사역의 불안을 전혀 해소하지 못합니다. 거대 모델 기업이 UI 버튼 하나만 추가해도 사라질 서비스라면 기관 투자는 불가능합니다.</p>
+      <div class="card-box card-box--gold">
+        <p><strong>💡 심사역이 원하는 진짜 답</strong></p>
+        <p>해자는 모델 그 자체가 아니라 <strong>'고객 업무 워크플로 깊숙이 들어간 데이터 파이프라인(Workflow Lock-in)'</strong>과 <strong>'고유의 버티컬 현장 데이터'</strong>에서 나옵니다.</p>
+        <ul style="padding-left:20px; font-size:14px; margin-top:8px;">
+          <li><strong>워크플로 장악</strong>: "고객사의 기존 ERP/그룹웨어와 양방향으로 연동되어 결재, 정산, 고객 응대까지 단절 없이 이어지는 워크플로를 장악했습니다."</li>
+          <li><strong>독점 데이터 루프</strong>: "범용 모델이 접근할 수 없는 현장의 비정형 암묵지 데이터를 수집해 파인튜닝하는 독점 루프를 갖추고 있습니다."</li>
+        </ul>
+        <p style="margin-top:8px; font-size:14px;">이 두 가지가 증명될 때 투자자는 안도합니다.</p>
+      </div>
+
+      <h3>질문 2. "고객이 10배로 늘어날 때, API 비용과 운영 인건비는 어떻게 비례합니까?"</h3>
+      <p>전통적 소프트웨어(SaaS)는 사용자 수가 늘어나도 서버 비용 증가가 미미해 마진율이 80%를 상회했습니다. 반면 AI 서비스는 사용량에 비례해 토큰 비용, 클라우드 연산 비용, 그리고 오류를 검수하는 인간 운영 인건비(Human-In-The-Loop)가 정비례로 폭증할 위험이 있습니다.</p>
+      <div class="card-box card-box--gold">
+        <p><strong>📊 단위경제(Unit Economics) 증명의 핵심</strong></p>
+        <p style="margin:0; font-size:14px;">
+          초기 검증(PoC) 단계에서는 상용 거대 LLM을 쓰더라도, 유료화 및 스케일업 단계에서는 <strong>소형 특화 모델(SLM) 파인튜닝과 지능형 캐싱, 계층형 라우팅</strong>을 통해 건당 처리 원가를 1/10 이하로 떨어뜨리는 기술적 원가 통제 로드맵을 덱에 반드시 담아야 합니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 02 -->
+    <section id="sec-02">
+      <h2>02. AX 스타트업 맞춤형 12장 IR 덱 구성</h2>
+      <p>심사역이 한 편의 덱을 보는 시간은 평균 3분 내외입니다. 슬라이드마다 군더더기를 버리고, 오직 하나의 명확한 메시지만 남겨야 합니다.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>슬라이드 주제</th>
+              <th>한 장당 남겨야 할 핵심 메시지</th>
+              <th>버려야 할 군더더기</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01</td>
+              <td><strong>Problem</strong><br><small style="color:var(--text-muted)">고통과 비용</small></td>
+              <td>고객이 지금 이 문제를 해결하기 위해 버리고 있는 '구체적인 시간과 비용'</td>
+              <td class="danger">막연한 시장 트렌드 기사 인용</td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td><strong>Solution</strong><br><small style="color:var(--text-muted)">에이전트</small></td>
+              <td>질문에 답만 하는 챗봇이 아닌, '실제 업무를 완결하는 3단계 워크플로'</td>
+              <td class="danger">복잡한 AI 아키텍처 블록 다이어그램</td>
+            </tr>
+            <tr>
+              <td>03</td>
+              <td><strong>Product & Demo</strong><br><small style="color:var(--text-muted)">실제 작동</small></td>
+              <td>현장 담당자가 단 3번의 클릭으로 원하는 결과물을 얻는 직관적 UX 캡처</td>
+              <td class="danger">글자만 가득한 기능 나열표</td>
+            </tr>
+            <tr>
+              <td>04</td>
+              <td><strong>Market</strong><br><small style="color:var(--text-muted)">SOM 중심</small></td>
+              <td>전체 거대 AI 시장(TAM)이 아닌, 우리가 당장 1년 안에 장악할 유효시장(SOM)</td>
+              <td class="danger">통계청의 100조 원짜리 AI 시장 수치</td>
+            </tr>
+            <tr>
+              <td>05</td>
+              <td><strong>Traction & Proof</strong><br><small style="color:var(--text-muted)">검증 지표</small></td>
+              <td>유료 파일럿 고객사에서 검증된 정량 지표 (작업 시간 단축, 결제 전환율)</td>
+              <td class="danger">단순 가입자 수나 단순 클릭 수</td>
+            </tr>
+            <tr>
+              <td>06</td>
+              <td><strong>Unit Economics</strong><br><small style="color:var(--text-muted)">원가와 마진</small></td>
+              <td>고객당 월 과금액 대비 건당 AI 추론·운영 원가 및 매출총이익률(Gross Margin)</td>
+              <td class="danger">미래의 막연한 추정 손익계산서</td>
+            </tr>
+            <tr>
+              <td>07</td>
+              <td><strong>Moat</strong><br><small style="color:var(--text-muted)">방어벽</small></td>
+              <td>고객이 쓸수록 데이터가 쌓이고 정확도가 높아져 이탈할 수 없는 플라이휠 구조</td>
+              <td class="danger">"우리가 최초입니다"라는 선언</td>
+            </tr>
+            <tr>
+              <td>08</td>
+              <td><strong>Competition</strong><br><small style="color:var(--text-muted)">포지셔닝</small></td>
+              <td>레거시 SI vs 범용 LLM 사이에서 우리만의 명확한 '버티컬 틈새' 포지셔닝</td>
+              <td class="danger">경쟁사 깎아내리기 식의 단순 X/O 체크표</td>
+            </tr>
+            <tr>
+              <td>09</td>
+              <td><strong>Go-To-Market</strong><br><small style="color:var(--text-muted)">영업 채널</small></td>
+              <td>초기 B2B 고객 50~100개사를 확보하기 위한 구체적인 영업 채널과 CAC</td>
+              <td class="danger">"바이럴 마케팅으로 확장하겠다"는 환상</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td><strong>Milestone</strong><br><small style="color:var(--text-muted)">실행 계획</small></td>
+              <td>이번 투자금으로 몇 개월 동안 어떤 지표(ARR, 고객 수)를 달성할 것인지의 확약</td>
+              <td class="danger">돈을 어디에 쓸지 모호한 일반 운영비 표</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td><strong>Team</strong><br><small style="color:var(--text-muted)">팀 빌딩</small></td>
+              <td>현장 도메인 전문성과 AI 엔지니어링 실행력을 겸비한 창업팀의 핏(Fit)</td>
+              <td class="danger">사업과 무관한 화려한 학력·경력 나열</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td><strong>The Ask</strong><br><small style="color:var(--text-muted)">유치 희망</small></td>
+              <td>유치 희망 금액과 뉴패러다임인베스트먼트와 함께 만들어갈 스케일업 청사진</td>
+              <td class="danger">불명확한 기업가치 요구</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Section 03 -->
+    <section id="sec-03">
+      <h2>03. ‘AI를 씁니다’를 지표로 바꾸기: 심사역을 설득하는 3대 숫자</h2>
+      <p>"저희 서비스는 AI 기술을 적용해 매우 효율적입니다." 이 문장은 심사위원의 귀를 스쳐 지나갑니다. 투자자의 펜을 멈추게 하는 것은 오직 정량화된 숫자뿐입니다. 다음 세 가지 숫자를 슬라이드 상단에 대문짝만하게 박아야 합니다.</p>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-card__badge">지표 1</span>
+          <h4 class="stat-card__title">처리 시간 단축률</h4>
+          <div class="stat-card__num" style="color:var(--navy);">96.7%</div>
+          <p class="stat-card__desc">
+            <strong>표현법</strong>: "기존 숙련 인력 180분 소요 → 에이전트 자동 초안 및 검수 6분 완료"<br>
+            <small style="color:var(--text-light)">고객사 담당자가 하루 업무 시간 중 얼만큼을 해방시켜 주었는지 시간 단위로 명시합니다.</small>
+          </p>
+        </div>
+
+        <div class="stat-card">
+          <span class="stat-card__badge">지표 2</span>
+          <h4 class="stat-card__title">건당 처리 원가 절감액</h4>
+          <div class="stat-card__num" style="color:#0f766e;">96% ↓</div>
+          <p class="stat-card__desc">
+            <strong>표현법</strong>: "기존 외주/인건비 건당 35,000원 → AI 파이프라인 처리 건당 1,400원"<br>
+            <small style="color:var(--text-light)">고객사 입장에서 ROI(투자 대비 수익)가 몇 개월 만에 회수되는지 명확한 돈의 언어로 환산합니다.</small>
+          </p>
+        </div>
+
+        <div class="stat-card">
+          <span class="stat-card__badge">지표 3</span>
+          <h4 class="stat-card__title">재작업률 / 인간 개입률</h4>
+          <div class="stat-card__num" style="color:#b45309;">2.8%</div>
+          <p class="stat-card__desc">
+            <strong>표현법</strong>: "도입 1주 차 수정률 42% → 도메인 피드백 학습 4주 차 수정률 2.8%로 수렴"<br>
+            <small style="color:var(--text-light)">100% 무결점 주장보다, 오류 시 인간이 어디서 개입하고 빈도가 어떻게 주는지 투명하게 증명합니다.</small>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 04 -->
+    <section id="sec-04">
+      <h2>04. 심사역의 4대 단골 반론과 방어 공식</h2>
+      <p>IR 질의응답(Q&A) 시간은 시험이 아니라, 투자자가 대표의 '위기 대처 능력과 시장 이해도'를 검증하는 자리입니다. 공격적인 질문이 나오면 기뻐해야 합니다. 관심이 없으면 아예 날카로운 질문을 던지지 않습니다.</p>
+
+      <div class="qa-card">
+        <div class="qa-card__head">반론 1. "ChatGPT나 Claude 쓰면 누구나 만드는 것 아닌가요?"</div>
+        <div class="qa-card__body">
+          <div class="qa-resp qa-resp--bad">
+            <strong>❌ 위험한 답변</strong>
+            "저희 프롬프트가 훨씬 복잡하고 길어서 못 따라옵니다."
+          </div>
+          <div class="qa-resp qa-resp--good">
+            <strong>✅ 정답 공식</strong>
+            "프롬프트는 복제 가능합니다. 하지만 저희 솔루션의 핵심은 프롬프트가 아니라, 고객사 사내망 내부의 파편화된 비정형 문서를 실시간 파싱하고 권한별로 필터링하는 <strong>전처리 파이프라인</strong>, 그리고 산업별 필수 규제를 자동으로 체크하는 <strong>사후 검증 룰 엔진</strong>입니다. 이 파이프라인은 오픈AI API 바깥에서 저희가 단독으로 소유한 자산입니다."
+          </div>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <div class="qa-card__head">반론 2. "고객사의 민감 데이터가 외부로 유출될 텐데, 기업들이 쓰겠습니까?"</div>
+        <div class="qa-card__body">
+          <div class="qa-resp qa-resp--bad">
+            <strong>❌ 위험한 답변</strong>
+            "OpenAI가 데이터 학습에 안 쓴다고 약관에 적혀 있습니다."
+          </div>
+          <div class="qa-resp qa-resp--good">
+            <strong>✅ 정답 공식</strong>
+            "엔터프라이즈 도입의 제1 조건은 보안입니다. 저희는 고객사 환경에 따라 사내 독립망(VPC) 내 소형 SLM 온프레미스 배포를 지원하며, 클라우드 호출 시에도 사전에 개인정보(PII)와 기업 기밀을 완벽히 마스킹하는 게이트웨이를 자체 구축해 보안 검증을 통과했습니다."
+          </div>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <div class="qa-card__head">반론 3. "매출이 늘어도 토큰 비용 내고 나면 적자 아닙니까?"</div>
+        <div class="qa-card__body">
+          <div class="qa-resp qa-resp--bad">
+            <strong>❌ 위험한 답변</strong>
+            "앞으로 토큰 가격이 계속 내려갈 테니 괜찮습니다."
+          </div>
+          <div class="qa-resp qa-resp--good">
+            <strong>✅ 정답 공식</strong>
+            "저희는 1차 분류 및 포맷 변환에는 비용이 1/50에 불과한 소형 오픈소스 모델을 사용하고, 고난도 추론이 필요한 핵심 10%에만 상위 모델을 호출하는 '계층형 모델 라우팅'을 가동 중입니다. 이를 통해 현재 유료 고객 기준 매출총이익률(Gross Margin) 72%를 방어하고 있습니다."
+          </div>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <div class="qa-card__head">반론 4. 아직 검증되지 않은 지표나 약점을 정곡으로 찔렸을 때</div>
+        <div class="qa-card__body">
+          <div class="qa-resp qa-resp--bad">
+            <strong>❌ 위험한 답변</strong>
+            당황해서 변명하거나, 아직 없는 숫자를 그럴듯하게 둘러대는 태도 (즉시 탈락).
+          </div>
+          <div class="qa-resp qa-resp--good">
+            <strong>✅ 정답 공식</strong>
+            "위원님, 정확한 지적 감사드립니다. 말씀해주신 리텐션 지표는 현재 3개월 차 코호트 추적 단계라 확정 수치로 말씀드리기엔 데이터가 부족합니다. 현재 파일럿 중인 5개사 중 4개사가 연간 계약 갱신 의사를 밝혔으며, 다음 달 말 정량 데이터가 확정되는 즉시 수치로 업데이트해 드리겠습니다."<br>
+            <small style="color:var(--text-muted); display:block; margin-top:4px;">(솔직한 인정 + 구체적인 검증 일정 제시가 최고의 신뢰를 줍니다.)</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 05 -->
+    <section id="sec-05">
+      <h2>05. 3분 실전 피칭 스크립트와 Q&A 현장 코칭</h2>
+      <p>60회 이상의 데모데이와 IR 행사 현장에서 수백 명의 발표자를 보며 내린 결론은 하나입니다. <strong>"피칭은 발표가 아니라, 대표의 확신을 투자자에게 전염시키는 대화"</strong>입니다.</p>
+
+      <h3>3분 IR 피칭 타임라인 공식</h3>
+      <div class="timeline">
+        <div class="time-step">
+          <div class="time-badge">0:00 ~ 0:30</div>
+          <div class="time-content">
+            <h4>Hook & Problem: 고통의 크기로 시작하라</h4>
+            <p>기술이나 회사 이름 설명으로 시간을 낭비하지 마십시오. 고객이 매일 마주하는 고통을 '시간과 돈의 숫자'로 던지십시오.</p>
+            <div class="example">"대한민국의 세무사들은 매년 부가세 신고철마다 3주 동안 잠을 자지 못하고 영수증 5만 장을 눈으로 대조합니다. 이 단순 노동에 버려지는 인건비만 연간 400억 원입니다."</div>
+          </div>
+        </div>
+
+        <div class="time-step">
+          <div class="time-badge">0:30 ~ 1:30</div>
+          <div class="time-content">
+            <h4>Solution & Traction: 실제 작동하는 증거를 보여주어라</h4>
+            <p>우리 AI가 그 일을 어떻게 끝내는지 단 3장의 슬라이드로 증명하십시오.</p>
+            <div class="example">"저희 솔루션은 스캔 영수증을 3초 만에 회계 계정에 분개하고 ERP에 자동 입력합니다. 지난 3개월간 30개 세무법인이 도입했고, 처리 시간은 95% 단축되었습니다."</div>
+          </div>
+        </div>
+
+        <div class="time-step">
+          <div class="time-badge">1:30 ~ 2:20</div>
+          <div class="time-content">
+            <h4>Business Model & Moat: 숫자의 뒷받침</h4>
+            <p>돈을 어떻게 벌고, 왜 남들이 못 따라오는지 보여주십시오.</p>
+            <div class="example">"건당 300원의 과금으로 이미 월 4,500만 원의 매출을 올리고 있으며, 추론 원가는 건당 18원에 불과합니다. 세무 특화 데이터 200만 건으로 훈련된 엔진은 범용 AI가 결코 흉내 낼 수 없습니다."</div>
+          </div>
+        </div>
+
+        <div class="time-step">
+          <div class="time-badge">2:20 ~ 3:00</div>
+          <div class="time-content">
+            <h4>Vision & The Ask: 당당한 클로징</h4>
+            <p>이번 라운드 목표와 앞으로 만들 도약의 크기를 밝히십시오.</p>
+            <div class="example">"이번 시드 5억 원 유치를 통해 전국 세무법인 점유율 15%를 달성하고, 내년 상반기 TIPS 연계와 함께 세무 자동화의 표준이 되겠습니다. 함께해 주십시오."</div>
+          </div>
+        </div>
+      </div>
+
+      <h3>Q&A를 장악하는 태도의 세 가지 원칙</h3>
+      <div class="card-box card-box--gold">
+        <ol style="padding-left:20px; font-size:15px; display:flex; flex-direction:column; gap:10px;">
+          <li><strong>두괄식 답변</strong>: 첫마디는 무조건 "네, 맞습니다" 또는 "아닙니다. 저희 모델은 ~입니다"로 시작하십시오. 질문에 대한 결론을 3초 안에 먼저 말하지 않고 배경 설명부터 늘어놓으면 심사역은 회피하고 있다고 판단합니다.</li>
+          <li><strong>비언어적 태도</strong>: 시선은 질문한 심사역에게 고정하고, 질문이 끝날 때까지 고개를 끄덕이며 진지하게 경청하십시오. 종종 질문 도중 말을 끊고 변명하려는 대표님들이 계시는데, 이는 투자 유치 실패의 지름길입니다.</li>
+          <li><strong>고요한 확신</strong>: 긴장하거나 흥분할 필요 없습니다. 이 사업 영역과 고객에 관해서는 객석에 앉은 심사역보다 매일 밤을 새운 대표님이 가장 잘 알고 있습니다. 그 현장의 무게감을 차분하고 단단한 목소리에 실어 전달하십시오.</li>
+        </ol>
+      </div>
+    </section>
+
+  </article>
+
+  <!-- Author Bio Card -->
+  <aside class="author-bio">
+    <h3>저자 소개 · 장은실 수석팀장</h3>
+    <p>
+      뉴패러다임인베스트먼트에서 TIPS/LIPS 운영과 초기 스타트업 투자심사를 총괄하고 있습니다.
+      직접 창업하여 기업을 경영하고 자금을 유치했던 창업가 경험을 바탕으로,
+      창업보육 기관과 액셀러레이터에서 60회 이상의 IR 코칭 및 심사를 진행하며
+      기업·정부·투자자를 잇는 실전 비즈니스 커뮤니케이터로 활동하고 있습니다.
+    </p>
+  </aside>
+
+</main>
+
+<footer class="footer">
+  <p><strong>뉴패러다임인베스트먼트</strong> · 2027년 1월 발행 예정 「아기유니콘 AX 도서」 Track 3 1장 초안</p>
+  <p>저작권 © 2026 뉴패러다임인베스트먼트 & 장은실. 무단 전재 및 배포를 금합니다.</p>
+  <p>문의: <a href="mailto:diana@npinvestment.co.kr">diana@npinvestment.co.kr</a></p>
+</footer>
+
+<script>
+// Scroll Progress Bar
+window.addEventListener('scroll', function() {
+  var winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById('progressFill').style.width = scrolled + '%';
+});
+
+// Font Size Adjust
+var currentScale = 1.0;
+function adjustFont(delta) {
+  currentScale += delta * 0.1;
+  if (currentScale < 0.8) currentScale = 0.8;
+  if (currentScale > 1.4) currentScale = 1.4;
+  document.querySelector('.content').style.fontSize = (16 * currentScale) + 'px';
+}
+</script>
+
+</body>
+</html>
