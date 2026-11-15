@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0c1929">
 <title>Track 3 · 1장: 투자자의 시선을 사로잡는 AX 스타트업의 IR 덱과 피칭 스토리라인 | 뉴패러다임인베스트먼트</title>
-<meta name="description" content="뉴패러다임인베스트먼트 2027 아기유니콘 AX 도서 Track 3 1장. 장은실 수석팀장이 전하는 AX 스타트업 맞춤형 12장 IR 덱 구성과 3대 핵심 지표, 4대 단골 반론 방어 공식.">
+<meta name="description" content="뉴패러다임인베스트먼트 2027 아기유니콘 AX 도서 Track 3 1장. 장은실 수석팀장이 정리한 AX 스타트업의 열두 장 IR 덱 구성과 세 가지 실행 숫자, 미리 준비하는 네 가지 반론과 3분 피칭의 순서.">
 <style>
 /* ==========================================================================
    New Paradigm Investment · 2027 AX Book · Track 3 Chapter 1
@@ -585,6 +585,19 @@ td.danger {
   .stat-grid { grid-template-columns: 1fr; }
   th, td { font-size: 13px; padding: 10px 8px; }
 }
+/* shared blocks · Track 3 톤 통일본 */
+.qa-note { font-size: 13px; color: var(--text-muted); margin: 8px 0 0; padding-left: 2px; }
+.pair-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 20px 22px; margin: 30px 0 0; }
+.pair-card h3 { font-size: 16px; color: var(--navy); margin: 6px 0 4px; }
+.pair-card__head { margin-bottom: 2px; }
+.pair-card__sub { font-size: 13px; color: var(--text-muted); margin-bottom: 12px; }
+.pair-card__links { display: grid; gap: 8px; }
+.pair-link { display: flex; gap: 12px; align-items: flex-start; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--navy); }
+.pair-link__no { font-family: var(--mono); font-size: 12px; font-weight: 700; color: var(--gold); }
+.pair-link__title { display: block; font-size: 14px; font-weight: 600; }
+.pair-link__track { display: block; font-size: 11px; color: var(--text-light); margin-top: 2px; }
+.chip { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: .04em; padding: 3px 8px; border-radius: 4px; }
+.chip--gold { color: var(--gold); background: var(--gold-bg); }
 </style>
 </head>
 <body>
@@ -635,8 +648,7 @@ td.danger {
   <aside class="takeaway">
     <div class="takeaway__label">Core Thesis · 핵심 한 줄</div>
     <div class="takeaway__quote">
-      투자자는 <strong>"AI를 씁니다"</strong>라는 말에 베팅하지 않는다.<br>
-      AI로 원가와 속도의 구조를 바꾼 <strong>'숫자'</strong>와 <strong>'비즈니스 모델'</strong>에 베팅한다.
+      투자자는 <strong>AI를 쓴다는 말</strong>이 아니라, 그 AI로 <strong>고객의 시간과 원가가 어떻게 달라졌는지</strong>를 봅니다.
     </div>
   </aside>
 
@@ -647,305 +659,68 @@ td.danger {
       이 장의 목차
     </h3>
     <ul class="toc-list">
-      <li><a href="#prologue"><span class="toc-num">00</span> 기술 자랑을 멈추어야 투자자의 눈이 뜨인다</a></li>
-      <li><a href="#sec-01"><span class="toc-num">01</span> 투자자의 두 가지 본질 질문: 방어성과 확장비용</a></li>
-      <li><a href="#sec-02"><span class="toc-num">02</span> AX 스타트업 맞춤형 12장 IR 덱 구성표</a></li>
-      <li><a href="#sec-03"><span class="toc-num">03</span> ‘AI를 씁니다’를 숫자로 바꾸는 3대 지표</a></li>
-      <li><a href="#sec-04"><span class="toc-num">04</span> 심사역의 4대 단골 반론과 방어 공식</a></li>
-      <li><a href="#sec-05"><span class="toc-num">05</span> 3분 실전 피칭 스크립트와 Q&A 현장 코칭</a></li>
+      <li><a href="#prologue"><span class="toc-num">00</span> 프롤로그: 기술 소개로 시작하면 대화가 짧아집니다</a></li>
+      <li><a href="#sec-01"><span class="toc-num">01</span> 투자자가 덱에서 확인하는 두 가지</a></li>
+      <li><a href="#sec-02"><span class="toc-num">02</span> 열두 장으로 만드는 IR 덱</a></li>
+      <li><a href="#sec-03"><span class="toc-num">03</span> ‘AI를 씁니다’를 세 개의 숫자로 바꿉니다</a></li>
+      <li><a href="#sec-04"><span class="toc-num">04</span> 미리 준비하는 네 가지 반론</a></li>
+      <li><a href="#sec-05"><span class="toc-num">05</span> 3분 피칭과 질의응답의 순서</a></li>
+      <li><a href="#sec-06"><span class="toc-num">06</span> 마무리하며</a></li>
     </ul>
   </nav>
 
   <!-- Content -->
   <article class="content">
-
-    <!-- Prologue -->
-    <section id="prologue">
-      <h2>[프롤로그] 기술 자랑을 멈추어야 투자자의 눈이 뜨인다</h2>
-      <p>투자자는 "우리는 AI를 잘 쓰는 회사입니다"라는 선언에 더 이상 설레지 않습니다. 챗GPT와 오픈소스 모델이 보편화된 지금, AI 기술을 연동했다는 사실 자체는 기술적 해자(Moat)가 되지 못하기 때문입니다.</p>
-      <p>심사역이 IR 덱을 넘기며 끝까지 찾는 것은 화려한 모델 파라미터 수나 최신 라이브러리 목록이 아닙니다. <strong>"이 팀이 고객의 문제를 해결하는 데 드는 비용과 시간을 어떻게 파괴적으로 줄였는가"</strong>, 그리고 <strong>"그 과정에서 경쟁자가 쉽게 흉내 낼 수 없는 구조적 우위를 어떻게 만들었는가"</strong>에 대한 단단한 증거입니다.</p>
-      <div class="card-box card-box--gold">
-        <p style="margin:0; font-size:15px; color:var(--navy);">
-          창업자로서 직접 회사를 만들고 운영하며 자금을 유치해 보았던 경험, 그리고 액셀러레이터 심사 현장에서 수많은 초기 스타트업을 심사하고 60회 이상 무대에서 피칭을 코칭하며 확인한 <strong>'투자자를 설득하는 진짜 AX IR의 법칙'</strong>을 이 장에 가감 없이 정리합니다.
-        </p>
-      </div>
+    <section id="prologue"><h2>프롤로그: 기술 소개로 시작하면 대화가 짧아집니다</h2>
+    <p>AI로 문서를 정리하는 서비스를 만드는 회사의 IR 미팅을 예로 들어 보겠습니다. 대표는 첫 장에 모델 구조와 파라미터 수를 놓았습니다. 심사역은 세 장을 넘기며 한 가지만 물었습니다. “이 서비스를 쓰는 고객의 처리 시간이 몇 분에서 몇 분으로 줄었나요?”</p>
+    <p>대표는 화면이 빨라졌다고 답했습니다. 미팅은 예정보다 일찍 끝났습니다. 기술이 부족해서가 아니라, 심사역이 확인하려는 숫자가 그 자리에 없었기 때문입니다.</p>
+    <p>AI를 연동했다는 사실은 이제 드문 일이 아닙니다. 같은 모델을 누구나 쓸 수 있고, 비슷한 기능이 몇 달 안에 다른 서비스에도 붙습니다. 그래서 투자자는 기술 목록이 아니라 그 기술로 무엇이 달라졌는지를 봅니다. 이 장은 그 변화를 덱의 순서와 답변의 문장으로 옮기는 방법을 다룹니다.</p>
+    <div class="card-box card-box--gold"><p style="margin:0 0 8px; font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--gold);">이 장의 기준</p><p style="margin:0; font-size:15px; line-height:1.85;">이 장은 직접 회사를 만들고 운영하며 자금을 유치한 경험과, 액셀러레이터 심사 현장에서 60회 이상 진행한 IR 코칭에서 확인한 내용을 바탕으로 했습니다. 덱의 구성과 지표는 업종과 단계에 따라 달라지므로, 자기 회사의 고객과 원가 구조에 맞춰 다시 계산해 쓰십시오.</p></div>
     </section>
-
-    <!-- Section 01 -->
-    <section id="sec-01">
-      <h2>01. 투자자가 던지는 두 가지 본질 질문: 방어 가능성과 확장 비용</h2>
-      <p>IR 미팅룸에서 AI 스타트업 대표들이 가장 당황하는 순간은 기술 질문을 받을 때가 아니라, 사업의 지속 가능성을 묻는 두 가지 질문을 맞닥뜨릴 때입니다.</p>
-
-      <h3>질문 1. "빅테크나 OpenAI가 다음 업데이트에 동일 기능을 내놓으면 어떻게 됩니까?"</h3>
-      <p>대다수 창업자가 "저희 프롬프트 엔지니어링이 더 정교합니다", "저희 알고리즘 튜닝이 앞섭니다"라고 답하지만, 이는 심사역의 불안을 전혀 해소하지 못합니다. 거대 모델 기업이 UI 버튼 하나만 추가해도 사라질 서비스라면 기관 투자는 불가능합니다.</p>
-      <div class="card-box card-box--gold">
-        <p><strong>💡 심사역이 원하는 진짜 답</strong></p>
-        <p>해자는 모델 그 자체가 아니라 <strong>'고객 업무 워크플로 깊숙이 들어간 데이터 파이프라인(Workflow Lock-in)'</strong>과 <strong>'고유의 버티컬 현장 데이터'</strong>에서 나옵니다.</p>
-        <ul style="padding-left:20px; font-size:14px; margin-top:8px;">
-          <li><strong>워크플로 장악</strong>: "고객사의 기존 ERP/그룹웨어와 양방향으로 연동되어 결재, 정산, 고객 응대까지 단절 없이 이어지는 워크플로를 장악했습니다."</li>
-          <li><strong>독점 데이터 루프</strong>: "범용 모델이 접근할 수 없는 현장의 비정형 암묵지 데이터를 수집해 파인튜닝하는 독점 루프를 갖추고 있습니다."</li>
-        </ul>
-        <p style="margin-top:8px; font-size:14px;">이 두 가지가 증명될 때 투자자는 안도합니다.</p>
-      </div>
-
-      <h3>질문 2. "고객이 10배로 늘어날 때, API 비용과 운영 인건비는 어떻게 비례합니까?"</h3>
-      <p>전통적 소프트웨어(SaaS)는 사용자 수가 늘어나도 서버 비용 증가가 미미해 마진율이 80%를 상회했습니다. 반면 AI 서비스는 사용량에 비례해 토큰 비용, 클라우드 연산 비용, 그리고 오류를 검수하는 인간 운영 인건비(Human-In-The-Loop)가 정비례로 폭증할 위험이 있습니다.</p>
-      <div class="card-box card-box--gold">
-        <p><strong>📊 단위경제(Unit Economics) 증명의 핵심</strong></p>
-        <p style="margin:0; font-size:14px;">
-          초기 검증(PoC) 단계에서는 상용 거대 LLM을 쓰더라도, 유료화 및 스케일업 단계에서는 <strong>소형 특화 모델(SLM) 파인튜닝과 지능형 캐싱, 계층형 라우팅</strong>을 통해 건당 처리 원가를 1/10 이하로 떨어뜨리는 기술적 원가 통제 로드맵을 덱에 반드시 담아야 합니다.
-        </p>
-      </div>
+    <section id="sec-01"><h2>투자자가 덱에서 확인하는 두 가지</h2>
+    <p>덱을 넘겨받은 심사역이 끝까지 확인하는 것은 두 가지입니다. 경쟁자가 같은 기능을 내놓았을 때 이 회사가 버틸 수 있는지, 그리고 고객이 늘 때 원가가 함께 늘어나지는 않는지. 이 두 질문에 답하지 못하면 나머지 장은 읽히지 않습니다.</p>
+    <h3>첫 번째 질문은 빅테크가 같은 기능을 내놓으면 어떻게 되는가입니다</h3>
+    <p>이 질문은 보통 이렇게 나옵니다. “빅테크나 오픈AI가 다음 업데이트에 같은 기능을 내놓으면 어떻게 됩니까?” 여기에 “저희 프롬프트가 더 정교합니다”라고 답하면 대화가 멈춥니다. 프롬프트는 복제되고, 모델은 바뀌고, 버튼 하나로 대체되는 기능은 해자가 되지 못합니다.</p>
+    <p>심사역이 확인하려는 것은 모델 바깥에 남는 자산입니다. 고객의 업무 흐름 안으로 들어가 결재와 정산, 고객 응대까지 이어지는 자리, 그리고 범용 모델이 모으기 어려운 현장 데이터. 이 두 가지가 쌓이는 구조를 설명할 수 있어야 합니다.</p>
+    <div class="table-wrap"><table><thead><tr><th>구분</th><th>설득이 되지 않는 답</th><th>덱에 남아야 하는 답</th></tr></thead><tbody><tr><td>프롬프트</td><td>저희 프롬프트가 더 정교하고 깁니다</td><td>반복되는 업무를 어떤 순서로 처리하는지 보여주는 흐름</td></tr><tr><td>모델</td><td>저희가 파인튜닝을 더 잘합니다</td><td>어떤 데이터로, 무엇을 개선했고, 기준선 대비 얼마나 나아졌는지</td></tr><tr><td>데이터</td><td>데이터가 많습니다</td><td>고객 업무 안에서 쌓이는 데이터와 그 데이터를 쓸 권한</td></tr><tr><td>업무 침투</td><td>연동이 쉽습니다</td><td>결재·정산·응대까지 이어지는 사용 장면과 이탈하지 않는 이유</td></tr></tbody></table></div>
+    <h3>두 번째 질문은 고객이 늘 때 원가가 어떻게 되는가입니다</h3>
+    <p>원가 질문은 이렇게 나옵니다. “고객이 열 배로 늘면 API 비용과 운영 인건비는 어떻게 됩니까?” 전통적인 소프트웨어는 사용자가 늘어도 서버 비용이 크게 늘지 않아 매출총이익률이 80%를 넘기도 했습니다. AI 서비스는 사용량에 따라 토큰 비용과 연산 비용이 붙고, 오류를 검수하는 사람의 시간도 함께 늘어납니다.</p>
+    <p>그래서 덱에는 원가를 낮추는 순서가 들어가야 합니다. 초기 검증 단계에서는 상용 모델을 쓰더라도, 유료 고객이 늘어난 뒤에는 반복되는 처리를 작은 모델로 돌리고, 같은 답은 저장해 다시 쓰고, 어려운 요청만 상위 모델로 보내는 구조를 준비합니다. 건당 원가를 어디까지 낮출 수 있는지, 언제 그 단계로 넘어가는지를 숫자로 보여주십시오.</p>
+    <div class="card-box card-box--gold"><p style="margin:0 0 8px; font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--gold);">원가는 나중에 계산하는 항목이 아닙니다</p><p style="margin:0; font-size:15px; line-height:1.85;">초기 고객을 확보하는 단계에서 원가 구조를 정해 두지 않으면, 매출이 늘수록 현금이 먼저 나가는 구조를 뒤늦게 발견하게 됩니다. 덱에는 지금의 건당 원가와, 고객이 늘었을 때의 원가를 나란히 놓으십시오.</p></div>
     </section>
-
-    <!-- Section 02 -->
-    <section id="sec-02">
-      <h2>02. AX 스타트업 맞춤형 12장 IR 덱 구성</h2>
-      <p>심사역이 한 편의 덱을 보는 시간은 평균 3분 내외입니다. 슬라이드마다 군더더기를 버리고, 오직 하나의 명확한 메시지만 남겨야 합니다.</p>
-
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>No</th>
-              <th>슬라이드 주제</th>
-              <th>한 장당 남겨야 할 핵심 메시지</th>
-              <th>버려야 할 군더더기</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>01</td>
-              <td><strong>Problem</strong><br><small style="color:var(--text-muted)">고통과 비용</small></td>
-              <td>고객이 지금 이 문제를 해결하기 위해 버리고 있는 '구체적인 시간과 비용'</td>
-              <td class="danger">막연한 시장 트렌드 기사 인용</td>
-            </tr>
-            <tr>
-              <td>02</td>
-              <td><strong>Solution</strong><br><small style="color:var(--text-muted)">에이전트</small></td>
-              <td>질문에 답만 하는 챗봇이 아닌, '실제 업무를 완결하는 3단계 워크플로'</td>
-              <td class="danger">복잡한 AI 아키텍처 블록 다이어그램</td>
-            </tr>
-            <tr>
-              <td>03</td>
-              <td><strong>Product & Demo</strong><br><small style="color:var(--text-muted)">실제 작동</small></td>
-              <td>현장 담당자가 단 3번의 클릭으로 원하는 결과물을 얻는 직관적 UX 캡처</td>
-              <td class="danger">글자만 가득한 기능 나열표</td>
-            </tr>
-            <tr>
-              <td>04</td>
-              <td><strong>Market</strong><br><small style="color:var(--text-muted)">SOM 중심</small></td>
-              <td>전체 거대 AI 시장(TAM)이 아닌, 우리가 당장 1년 안에 장악할 유효시장(SOM)</td>
-              <td class="danger">통계청의 100조 원짜리 AI 시장 수치</td>
-            </tr>
-            <tr>
-              <td>05</td>
-              <td><strong>Traction & Proof</strong><br><small style="color:var(--text-muted)">검증 지표</small></td>
-              <td>유료 파일럿 고객사에서 검증된 정량 지표 (작업 시간 단축, 결제 전환율)</td>
-              <td class="danger">단순 가입자 수나 단순 클릭 수</td>
-            </tr>
-            <tr>
-              <td>06</td>
-              <td><strong>Unit Economics</strong><br><small style="color:var(--text-muted)">원가와 마진</small></td>
-              <td>고객당 월 과금액 대비 건당 AI 추론·운영 원가 및 매출총이익률(Gross Margin)</td>
-              <td class="danger">미래의 막연한 추정 손익계산서</td>
-            </tr>
-            <tr>
-              <td>07</td>
-              <td><strong>Moat</strong><br><small style="color:var(--text-muted)">방어벽</small></td>
-              <td>고객이 쓸수록 데이터가 쌓이고 정확도가 높아져 이탈할 수 없는 플라이휠 구조</td>
-              <td class="danger">"우리가 최초입니다"라는 선언</td>
-            </tr>
-            <tr>
-              <td>08</td>
-              <td><strong>Competition</strong><br><small style="color:var(--text-muted)">포지셔닝</small></td>
-              <td>레거시 SI vs 범용 LLM 사이에서 우리만의 명확한 '버티컬 틈새' 포지셔닝</td>
-              <td class="danger">경쟁사 깎아내리기 식의 단순 X/O 체크표</td>
-            </tr>
-            <tr>
-              <td>09</td>
-              <td><strong>Go-To-Market</strong><br><small style="color:var(--text-muted)">영업 채널</small></td>
-              <td>초기 B2B 고객 50~100개사를 확보하기 위한 구체적인 영업 채널과 CAC</td>
-              <td class="danger">"바이럴 마케팅으로 확장하겠다"는 환상</td>
-            </tr>
-            <tr>
-              <td>10</td>
-              <td><strong>Milestone</strong><br><small style="color:var(--text-muted)">실행 계획</small></td>
-              <td>이번 투자금으로 몇 개월 동안 어떤 지표(ARR, 고객 수)를 달성할 것인지의 확약</td>
-              <td class="danger">돈을 어디에 쓸지 모호한 일반 운영비 표</td>
-            </tr>
-            <tr>
-              <td>11</td>
-              <td><strong>Team</strong><br><small style="color:var(--text-muted)">팀 빌딩</small></td>
-              <td>현장 도메인 전문성과 AI 엔지니어링 실행력을 겸비한 창업팀의 핏(Fit)</td>
-              <td class="danger">사업과 무관한 화려한 학력·경력 나열</td>
-            </tr>
-            <tr>
-              <td>12</td>
-              <td><strong>The Ask</strong><br><small style="color:var(--text-muted)">유치 희망</small></td>
-              <td>유치 희망 금액과 뉴패러다임인베스트먼트와 함께 만들어갈 스케일업 청사진</td>
-              <td class="danger">불명확한 기업가치 요구</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    <section id="sec-02"><h2>열두 장으로 만드는 IR 덱</h2>
+    <p>심사역이 덱 한 편을 보는 시간은 길지 않습니다. 첫 장부터 마지막 장까지 같은 주장이 이어져야 하고, 장마다 남길 문장은 하나면 충분합니다. 아래 표는 AX 스타트업이 자주 쓰는 열두 장의 순서와, 장마다 남길 메시지, 덜어낼 내용을 정리한 것입니다.</p>
+    <div class="table-wrap"><table><thead><tr><th>장</th><th>남길 메시지</th><th>덜어낼 것</th></tr></thead><tbody><tr><td>1 문제와 비용</td><td>고객이 지금 이 문제에 쓰고 있는 시간과 돈</td><td>시장 전망 기사 인용</td></tr><tr><td>2 해결 방식</td><td>질문에 답하는 챗봇이 아니라 업무를 끝내는 흐름</td><td>복잡한 아키텍처 그림</td></tr><tr><td>3 제품 시연</td><td>담당자가 세 번의 클릭으로 결과를 얻는 화면</td><td>기능을 나열한 표</td></tr><tr><td>4 시장</td><td>1년 안에 실제로 확보할 수 있는 시장</td><td>100조 원 규모의 AI 시장 수치</td></tr><tr><td>5 검증</td><td>유료 고객에서 측정한 처리 시간과 전환율</td><td>가입자 수와 클릭 수</td></tr><tr><td>6 단위경제</td><td>고객 한 곳에서 남는 이익과 건당 원가</td><td>먼 미래의 추정 손익</td></tr><tr><td>7 방어 구조</td><td>쓸수록 데이터가 쌓이고 정확도가 올라가는 구조</td><td>“우리가 최초입니다”라는 말</td></tr><tr><td>8 경쟁 위치</td><td>기존 SI와 범용 모델 사이에서 우리 자리</td><td>경쟁사를 깎는 비교표</td></tr><tr><td>9 영업 방식</td><td>첫 50~100개 고객을 만날 채널과 비용</td><td>“입소문으로 확장한다”는 계획</td></tr><tr><td>10 마일스톤</td><td>이번 투자금으로 몇 개월 안에 달성할 지표</td><td>용도가 모호한 운영비 표</td></tr><tr><td>11 팀</td><td>현장 이해와 개발 실행력의 조합</td><td>사업과 무관한 경력 나열</td></tr><tr><td>12 요청</td><td>유치 금액과 그 돈으로 만들 변화</td><td>근거 없는 기업가치</td></tr></tbody></table></div>
+    <p>이 표에서 눈여겨볼 곳은 네 번째와 여섯 번째 슬라이드입니다. 시장 규모는 크게 쓰기 쉽고, 원가는 나중으로 미루기 쉽습니다. 그런데 심사역이 오래 머무는 곳이 이 두 슬라이드입니다. 시장은 전체 시장이 아니라 1년 안에 실제로 팔 수 있는 범위로 쓰고, 원가는 고객 한 곳을 기준으로 계산해 두십시오.</p>
+    <p>열두 장은 순서가 중요합니다. 문제와 비용으로 시작해 검증과 단위경제를 지나고, 마지막에 요청을 놓습니다. 요청을 앞에 두면 그 뒤의 장은 요청을 설명하는 자료로 읽힙니다.</p>
     </section>
-
-    <!-- Section 03 -->
-    <section id="sec-03">
-      <h2>03. ‘AI를 씁니다’를 지표로 바꾸기: 심사역을 설득하는 3대 숫자</h2>
-      <p>"저희 서비스는 AI 기술을 적용해 매우 효율적입니다." 이 문장은 심사위원의 귀를 스쳐 지나갑니다. 투자자의 펜을 멈추게 하는 것은 오직 정량화된 숫자뿐입니다. 다음 세 가지 숫자를 슬라이드 상단에 대문짝만하게 박아야 합니다.</p>
-
-      <div class="stat-grid">
-        <div class="stat-card">
-          <span class="stat-card__badge">지표 1</span>
-          <h4 class="stat-card__title">처리 시간 단축률</h4>
-          <div class="stat-card__num" style="color:var(--navy);">96.7%</div>
-          <p class="stat-card__desc">
-            <strong>표현법</strong>: "기존 숙련 인력 180분 소요 → 에이전트 자동 초안 및 검수 6분 완료"<br>
-            <small style="color:var(--text-light)">고객사 담당자가 하루 업무 시간 중 얼만큼을 해방시켜 주었는지 시간 단위로 명시합니다.</small>
-          </p>
-        </div>
-
-        <div class="stat-card">
-          <span class="stat-card__badge">지표 2</span>
-          <h4 class="stat-card__title">건당 처리 원가 절감액</h4>
-          <div class="stat-card__num" style="color:#0f766e;">96% ↓</div>
-          <p class="stat-card__desc">
-            <strong>표현법</strong>: "기존 외주/인건비 건당 35,000원 → AI 파이프라인 처리 건당 1,400원"<br>
-            <small style="color:var(--text-light)">고객사 입장에서 ROI(투자 대비 수익)가 몇 개월 만에 회수되는지 명확한 돈의 언어로 환산합니다.</small>
-          </p>
-        </div>
-
-        <div class="stat-card">
-          <span class="stat-card__badge">지표 3</span>
-          <h4 class="stat-card__title">재작업률 / 인간 개입률</h4>
-          <div class="stat-card__num" style="color:#b45309;">2.8%</div>
-          <p class="stat-card__desc">
-            <strong>표현법</strong>: "도입 1주 차 수정률 42% → 도메인 피드백 학습 4주 차 수정률 2.8%로 수렴"<br>
-            <small style="color:var(--text-light)">100% 무결점 주장보다, 오류 시 인간이 어디서 개입하고 빈도가 어떻게 주는지 투명하게 증명합니다.</small>
-          </p>
-        </div>
-      </div>
+    <section id="sec-03"><h2>‘AI를 씁니다’를 세 개의 숫자로 바꿉니다</h2>
+    <p>“저희 서비스는 AI를 적용해 효율적입니다”라는 문장은 심사역의 기억에 남지 않습니다. 남는 것은 숫자입니다. 다만 숫자가 많을 필요는 없습니다. 고객이 체감한 시간, 고객이 아낀 돈, 사람이 다시 손본 비율. 이 세 가지면 충분합니다.</p>
+    <div class="table-wrap"><table><thead><tr><th>지표</th><th>덱에 쓰는 문장</th><th>함께 적을 것</th></tr></thead><tbody><tr><td>처리 시간</td><td>숙련 인력이 180분에 하던 일을 6분에 끝냅니다</td><td>어떤 업무를, 어떤 조건에서 측정했는지</td></tr><tr><td>건당 원가</td><td>건당 35,000원이던 비용이 1,400원으로 줄었습니다</td><td>외주비와 인건비를 어떻게 계산했는지</td></tr><tr><td>재작업률</td><td>도입 첫 주 42%이던 수정률이 4주 뒤 2.8%로 내려왔습니다</td><td>누가 어떤 기준으로 검수했는지</td></tr></tbody></table></div>
+    <p>세 번째 숫자를 넣는 회사는 드뭅니다. 정확도 100%를 말하는 것보다, 어디서 사람이 개입하고 그 빈도가 어떻게 줄었는지를 보여주는 편이 신뢰를 만듭니다. 오류가 없는 시스템은 없고, 심사역도 그것을 압니다.</p>
+    <p>숫자에는 조건을 붙이십시오. 기간과 표본, 확인한 고객사를 함께 적으면 그 숫자는 측정 결과가 되고, 조건이 없으면 주장이 됩니다. “재작업률 2.8%”보다 “파일럿 4주, 고객사 3곳, 담당자 확인서 첨부”가 붙은 2.8%가 오래 남습니다.</p>
+    <div class="card-box card-box--gold"><p style="margin:0 0 8px; font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--gold);">숫자가 없을 때 쓸 수 있는 문장</p><p style="margin:0; font-size:15px; line-height:1.85;">아직 측정 전이라면 측정 계획을 쓰십시오. “도입 4주 차에 처리 시간과 재작업률을 같은 조건으로 다시 재겠습니다”라는 문장은 빈칸보다 낫습니다. 심사역이 감점하는 것은 숫자가 없는 상태가 아니라, 숫자가 없는데 있는 것처럼 쓰는 태도입니다.</p></div>
     </section>
-
-    <!-- Section 04 -->
-    <section id="sec-04">
-      <h2>04. 심사역의 4대 단골 반론과 방어 공식</h2>
-      <p>IR 질의응답(Q&A) 시간은 시험이 아니라, 투자자가 대표의 '위기 대처 능력과 시장 이해도'를 검증하는 자리입니다. 공격적인 질문이 나오면 기뻐해야 합니다. 관심이 없으면 아예 날카로운 질문을 던지지 않습니다.</p>
-
-      <div class="qa-card">
-        <div class="qa-card__head">반론 1. "ChatGPT나 Claude 쓰면 누구나 만드는 것 아닌가요?"</div>
-        <div class="qa-card__body">
-          <div class="qa-resp qa-resp--bad">
-            <strong>❌ 위험한 답변</strong>
-            "저희 프롬프트가 훨씬 복잡하고 길어서 못 따라옵니다."
-          </div>
-          <div class="qa-resp qa-resp--good">
-            <strong>✅ 정답 공식</strong>
-            "프롬프트는 복제 가능합니다. 하지만 저희 솔루션의 핵심은 프롬프트가 아니라, 고객사 사내망 내부의 파편화된 비정형 문서를 실시간 파싱하고 권한별로 필터링하는 <strong>전처리 파이프라인</strong>, 그리고 산업별 필수 규제를 자동으로 체크하는 <strong>사후 검증 룰 엔진</strong>입니다. 이 파이프라인은 오픈AI API 바깥에서 저희가 단독으로 소유한 자산입니다."
-          </div>
-        </div>
-      </div>
-
-      <div class="qa-card">
-        <div class="qa-card__head">반론 2. "고객사의 민감 데이터가 외부로 유출될 텐데, 기업들이 쓰겠습니까?"</div>
-        <div class="qa-card__body">
-          <div class="qa-resp qa-resp--bad">
-            <strong>❌ 위험한 답변</strong>
-            "OpenAI가 데이터 학습에 안 쓴다고 약관에 적혀 있습니다."
-          </div>
-          <div class="qa-resp qa-resp--good">
-            <strong>✅ 정답 공식</strong>
-            "엔터프라이즈 도입의 제1 조건은 보안입니다. 저희는 고객사 환경에 따라 사내 독립망(VPC) 내 소형 SLM 온프레미스 배포를 지원하며, 클라우드 호출 시에도 사전에 개인정보(PII)와 기업 기밀을 완벽히 마스킹하는 게이트웨이를 자체 구축해 보안 검증을 통과했습니다."
-          </div>
-        </div>
-      </div>
-
-      <div class="qa-card">
-        <div class="qa-card__head">반론 3. "매출이 늘어도 토큰 비용 내고 나면 적자 아닙니까?"</div>
-        <div class="qa-card__body">
-          <div class="qa-resp qa-resp--bad">
-            <strong>❌ 위험한 답변</strong>
-            "앞으로 토큰 가격이 계속 내려갈 테니 괜찮습니다."
-          </div>
-          <div class="qa-resp qa-resp--good">
-            <strong>✅ 정답 공식</strong>
-            "저희는 1차 분류 및 포맷 변환에는 비용이 1/50에 불과한 소형 오픈소스 모델을 사용하고, 고난도 추론이 필요한 핵심 10%에만 상위 모델을 호출하는 '계층형 모델 라우팅'을 가동 중입니다. 이를 통해 현재 유료 고객 기준 매출총이익률(Gross Margin) 72%를 방어하고 있습니다."
-          </div>
-        </div>
-      </div>
-
-      <div class="qa-card">
-        <div class="qa-card__head">반론 4. 아직 검증되지 않은 지표나 약점을 정곡으로 찔렸을 때</div>
-        <div class="qa-card__body">
-          <div class="qa-resp qa-resp--bad">
-            <strong>❌ 위험한 답변</strong>
-            당황해서 변명하거나, 아직 없는 숫자를 그럴듯하게 둘러대는 태도 (즉시 탈락).
-          </div>
-          <div class="qa-resp qa-resp--good">
-            <strong>✅ 정답 공식</strong>
-            "위원님, 정확한 지적 감사드립니다. 말씀해주신 리텐션 지표는 현재 3개월 차 코호트 추적 단계라 확정 수치로 말씀드리기엔 데이터가 부족합니다. 현재 파일럿 중인 5개사 중 4개사가 연간 계약 갱신 의사를 밝혔으며, 다음 달 말 정량 데이터가 확정되는 즉시 수치로 업데이트해 드리겠습니다."<br>
-            <small style="color:var(--text-muted); display:block; margin-top:4px;">(솔직한 인정 + 구체적인 검증 일정 제시가 최고의 신뢰를 줍니다.)</small>
-          </div>
-        </div>
-      </div>
+    <section id="sec-04"><h2>미리 준비하는 네 가지 반론</h2>
+    <p>질의응답 시간은 시험이 아닙니다. 투자자가 대표가 시장을 이해하고 있는지, 어려운 질문 앞에서 흔들리지 않는지를 확인하는 자리입니다. 관심이 없으면 날카로운 질문을 하지 않습니다. 그러니 반론이 나오면 방어부터 하지 말고, 그 질문이 무엇을 확인하려는지 먼저 보십시오.</p>
+    <div class="qa-card"><div class="qa-card__head">“챗GPT나 클로드로 누구나 만들 수 있지 않나요?”</div><div class="qa-card__body"><div class="qa-resp qa-resp--bad"><strong>흔한 답</strong>“저희 프롬프트가 훨씬 복잡하고 길어서 따라오지 못합니다.”</div><div class="qa-resp qa-resp--good"><strong>나은 답</strong>“프롬프트는 복제할 수 있습니다. 저희 자산은 프롬프트가 아니라 고객사 내부의 문서를 실시간으로 읽어 권한별로 걸러내는 전처리 과정과, 산업별 규제를 자동으로 확인하는 검증 규칙입니다. 이 두 가지는 외부 모델과 별개로 저희가 운영합니다.”</div><p class="qa-note">모델 바깥에 남는 것을 설명하십시오. 프롬프트와 모델 이름은 해자가 아닙니다.</p></div></div>
+    <div class="qa-card"><div class="qa-card__head">“민감한 데이터가 밖으로 나가는데 기업이 쓰겠습니까?”</div><div class="qa-card__body"><div class="qa-resp qa-resp--bad"><strong>흔한 답</strong>“오픈AI가 학습에 쓰지 않는다고 약관에 적혀 있습니다.”</div><div class="qa-resp qa-resp--good"><strong>나은 답</strong>“기업 도입의 첫 조건은 보안입니다. 고객 환경에 따라 사내망 안에 작은 모델을 두는 방식과, 외부로 호출할 때 개인정보와 기밀을 먼저 가리는 게이트웨이를 함께 제공합니다. 보안 검증은 이미 통과했습니다.”</div><p class="qa-note">약관을 인용하는 답은 책임의 위치를 남에게 두는 답으로 읽힙니다. 우리가 무엇을 막고 무엇을 기록하는지를 말하십시오.</p></div></div>
+    <div class="qa-card"><div class="qa-card__head">“매출이 늘어도 토큰 비용을 내면 적자 아닙니까?”</div><div class="qa-card__body"><div class="qa-resp qa-resp--bad"><strong>흔한 답</strong>“앞으로 토큰 가격이 계속 내려갈 테니 괜찮습니다.”</div><div class="qa-resp qa-resp--good"><strong>나은 답</strong>“분류와 형식 변환은 비용이 50분의 1인 작은 모델로 처리하고, 어려운 추론이 필요한 10%만 상위 모델로 보냅니다. 지금 유료 고객 기준 매출총이익률은 72%입니다.”</div><p class="qa-note">가격 인하를 기대하는 답은 계획이 아니라 기대입니다. 구조와 현재 숫자로 답하십시오.</p></div></div>
+    <div class="qa-card"><div class="qa-card__head">아직 검증되지 않은 지표를 물었을 때</div><div class="qa-card__body"><div class="qa-resp qa-resp--bad"><strong>흔한 답</strong>변명하거나, 없는 숫자를 그럴듯하게 둘러댑니다.</div><div class="qa-resp qa-resp--good"><strong>나은 답</strong>“정확한 지적입니다. 리텐션은 3개월 차 코호트 추적 중이라 확정 수치가 없습니다. 파일럿 5개사 중 4개사가 갱신 의사를 밝혔고, 다음 달 말에 숫자로 다시 말씀드리겠습니다.”</div><p class="qa-note">모른다고 말하는 것보다 위험한 것은 모른다는 사실을 숨기는 태도입니다. 모르는 지표, 아는 범위, 확인 일정. 세 문장이면 충분합니다.</p></div></div>
     </section>
-
-    <!-- Section 05 -->
-    <section id="sec-05">
-      <h2>05. 3분 실전 피칭 스크립트와 Q&A 현장 코칭</h2>
-      <p>60회 이상의 데모데이와 IR 행사 현장에서 수백 명의 발표자를 보며 내린 결론은 하나입니다. <strong>"피칭은 발표가 아니라, 대표의 확신을 투자자에게 전염시키는 대화"</strong>입니다.</p>
-
-      <h3>3분 IR 피칭 타임라인 공식</h3>
-      <div class="timeline">
-        <div class="time-step">
-          <div class="time-badge">0:00 ~ 0:30</div>
-          <div class="time-content">
-            <h4>Hook & Problem: 고통의 크기로 시작하라</h4>
-            <p>기술이나 회사 이름 설명으로 시간을 낭비하지 마십시오. 고객이 매일 마주하는 고통을 '시간과 돈의 숫자'로 던지십시오.</p>
-            <div class="example">"대한민국의 세무사들은 매년 부가세 신고철마다 3주 동안 잠을 자지 못하고 영수증 5만 장을 눈으로 대조합니다. 이 단순 노동에 버려지는 인건비만 연간 400억 원입니다."</div>
-          </div>
-        </div>
-
-        <div class="time-step">
-          <div class="time-badge">0:30 ~ 1:30</div>
-          <div class="time-content">
-            <h4>Solution & Traction: 실제 작동하는 증거를 보여주어라</h4>
-            <p>우리 AI가 그 일을 어떻게 끝내는지 단 3장의 슬라이드로 증명하십시오.</p>
-            <div class="example">"저희 솔루션은 스캔 영수증을 3초 만에 회계 계정에 분개하고 ERP에 자동 입력합니다. 지난 3개월간 30개 세무법인이 도입했고, 처리 시간은 95% 단축되었습니다."</div>
-          </div>
-        </div>
-
-        <div class="time-step">
-          <div class="time-badge">1:30 ~ 2:20</div>
-          <div class="time-content">
-            <h4>Business Model & Moat: 숫자의 뒷받침</h4>
-            <p>돈을 어떻게 벌고, 왜 남들이 못 따라오는지 보여주십시오.</p>
-            <div class="example">"건당 300원의 과금으로 이미 월 4,500만 원의 매출을 올리고 있으며, 추론 원가는 건당 18원에 불과합니다. 세무 특화 데이터 200만 건으로 훈련된 엔진은 범용 AI가 결코 흉내 낼 수 없습니다."</div>
-          </div>
-        </div>
-
-        <div class="time-step">
-          <div class="time-badge">2:20 ~ 3:00</div>
-          <div class="time-content">
-            <h4>Vision & The Ask: 당당한 클로징</h4>
-            <p>이번 라운드 목표와 앞으로 만들 도약의 크기를 밝히십시오.</p>
-            <div class="example">"이번 시드 5억 원 유치를 통해 전국 세무법인 점유율 15%를 달성하고, 내년 상반기 TIPS 연계와 함께 세무 자동화의 표준이 되겠습니다. 함께해 주십시오."</div>
-          </div>
-        </div>
-      </div>
-
-      <h3>Q&A를 장악하는 태도의 세 가지 원칙</h3>
-      <div class="card-box card-box--gold">
-        <ol style="padding-left:20px; font-size:15px; display:flex; flex-direction:column; gap:10px;">
-          <li><strong>두괄식 답변</strong>: 첫마디는 무조건 "네, 맞습니다" 또는 "아닙니다. 저희 모델은 ~입니다"로 시작하십시오. 질문에 대한 결론을 3초 안에 먼저 말하지 않고 배경 설명부터 늘어놓으면 심사역은 회피하고 있다고 판단합니다.</li>
-          <li><strong>비언어적 태도</strong>: 시선은 질문한 심사역에게 고정하고, 질문이 끝날 때까지 고개를 끄덕이며 진지하게 경청하십시오. 종종 질문 도중 말을 끊고 변명하려는 대표님들이 계시는데, 이는 투자 유치 실패의 지름길입니다.</li>
-          <li><strong>고요한 확신</strong>: 긴장하거나 흥분할 필요 없습니다. 이 사업 영역과 고객에 관해서는 객석에 앉은 심사역보다 매일 밤을 새운 대표님이 가장 잘 알고 있습니다. 그 현장의 무게감을 차분하고 단단한 목소리에 실어 전달하십시오.</li>
-        </ol>
-      </div>
+    <section id="sec-05"><h2>3분 피칭과 질의응답의 순서</h2>
+    <p>데모데이와 IR 행사에서 발표를 지켜보면, 준비가 된 대표의 3분은 대개 네 구간으로 나뉩니다. 문제와 비용, 지금까지 만든 것, 수익 구조와 방어, 요청입니다. 시간이 부족하면 첫 구간과 마지막 구간을 줄이지 말고 가운데를 줄이십시오.</p>
+    <div class="timeline"><div class="time-step"><div class="time-badge">0:00 ~ 0:30</div><div class="time-content"><h4>문제와 비용</h4><p>고객이 지금 쓰고 있는 시간과 돈으로 시작합니다. 회사 소개와 연혁은 이 구간에 넣지 않습니다.</p><div class="example">“세무법인 담당자는 신고철마다 영수증 5만 장을 눈으로 대조합니다.”</div></div></div><div class="time-step"><div class="time-badge">0:30 ~ 1:30</div><div class="time-content"><h4>지금까지 만든 것</h4><p>실제로 작동하는 화면과 숫자 세 개. 데모는 30초면 충분합니다.</p><div class="example">“영수증을 3초 만에 분개해 장부에 넣습니다. 파일럿 30개사에서 처리 시간이 95% 줄었습니다.”</div></div></div><div class="time-step"><div class="time-badge">1:30 ~ 2:20</div><div class="time-content"><h4>수익 구조와 방어</h4><p>돈이 어디서 남고, 왜 다른 회사가 따라오기 어려운지를 설명합니다.</p><div class="example">“건당 300원을 받고 원가는 18원입니다. 세무 데이터 200만 건으로 학습한 모델을 씁니다.”</div></div></div><div class="time-step"><div class="time-badge">2:20 ~ 3:00</div><div class="time-content"><h4>요청</h4><p>이번 라운드의 목표와 그 돈으로 만들 변화를 말합니다.</p><div class="example">“5억 원으로 점유율 15%를 만들고, 내년 상반기 팁스와 함께 다음 단계로 갑니다.”</div></div></div></div>
+    <p>표의 예시 문장은 설명을 위해 만든 것이고 실제 수치가 아닙니다. 발표에서는 자기 회사의 숫자로 바꾸십시오. 숫자가 아직 없다면 그 자리에 측정 계획을 넣습니다.</p>
+    <h3>질의응답에서는 결론을 먼저 말합니다</h3>
+    <p>질의응답에서 흔들리는 지점은 내용이 아니라 순서입니다. 질문을 받으면 첫 문장에 답을 놓고, 그다음에 근거를 붙이십시오. “네, 맞습니다” 또는 “아닙니다. 저희 방식은 다릅니다”로 시작하면 심사역은 다음 질문으로 넘어갈 수 있습니다.</p>
+    <p>설명이 길어지면 회피로 읽힙니다. 모르는 지표는 모른다고 말하고 확인 일정을 붙이십시오. 질문이 끝나기 전에 말을 끊는 일도 피해야 합니다. 끊는 순간 남는 인상은 준비 부족입니다.</p>
+    <p>목소리에 대해서도 한 가지만 덧붙이겠습니다. 이 사업과 고객을 가장 오래 본 사람은 대표입니다. 그 사실을 큰 소리로 증명할 필요는 없습니다. 차분하게 숫자를 말하고, 모르는 것은 모른다고 말하는 태도가 오래 남습니다.</p>
     </section>
-
+    <section id="sec-06"><h2>마무리하며</h2>
+    <p>IR 덱은 회사를 자랑하는 자료가 아니라, 심사역이 확인하려는 것을 먼저 꺼내 놓는 자료입니다. 기술 설명을 줄이고, 고객의 시간과 원가를 숫자로 놓고, 반론에는 근거로 답하십시오.</p>
+    <p>이번 주에 할 수 있는 일은 하나입니다. 지금 쓰는 덱의 열두 장을 펼쳐 놓고, 장마다 남길 문장 하나를 적어 보십시오. 문장이 두 개가 되는 장은 아직 정리가 덜 된 장입니다. 그 장부터 고치면 덱의 나머지도 함께 정리됩니다.</p>
+    </section>
   </article>
 
   <!-- Author Bio Card -->
